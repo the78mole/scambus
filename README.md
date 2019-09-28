@@ -1,6 +1,10 @@
 # scambus
 Scambus is a python based wireless M-Bus scanner and dissector
 
+# Usage
+
+The simplest usage is, to store a single captured telegram of the wmbus to a file, containing two-digit hex values for each byte of the telegram.
+
 # examples
 ## plaintext frames
 ```

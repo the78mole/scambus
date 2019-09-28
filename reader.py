@@ -24,7 +24,7 @@ def main(argv):
     for opt, arg in opts:
         if opt in ("-f", "--filename"):
             filename = arg
-            text = open(filename, 'r').read()
+            text = open(filename, 'r').read().strip()
         if opt in ("-t", "--text"):
             text = arg
         if opt in ("-v"):
@@ -33,7 +33,7 @@ def main(argv):
     if verbosity > 0:
         print "verbosity: ", verbosity
         print "filename: ", filename
-        print "txt: ",text
+        print "txt: '",text,"'"
 
     capture = bytearray().fromhex(text)
     
